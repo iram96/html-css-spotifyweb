@@ -19,9 +19,6 @@
   display: flex;
   flex-direction: column;
 }
-.pos-rel {
-  position: relative;
-}
 
 .header {
   position: fixed;
@@ -56,3 +53,5 @@
   flex-direction: row;
   /* width: 100%; */
 }
+
+/* HEADER */
