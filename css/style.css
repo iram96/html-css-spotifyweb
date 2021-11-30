@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* body {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+.pos-rel {
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.568);
+  height: 100px;
+  z-index: static;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: red;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+.player {
+  height: 100px;
+  background-color: dodgerblue;
+  width: 100%;
+}
+
+.sidebar {
+  height: calc(100vh - 100px);
+  background-color: darkgreen;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.pippo {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+}
