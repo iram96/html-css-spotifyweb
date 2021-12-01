@@ -76,6 +76,7 @@
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
+  color: inherit;
 }
 
 .button > img {
@@ -137,6 +138,24 @@ nav {
   flex-basis: 100%;
   flex-shrink: 0;
   height: 100px;
+}
+nav li {
+  transition: 0.2s;
+}
+
+nav li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+nav li:hover .borderlime {
+  display: block;
+}
+
+.borderlime {
+  width: 40%;
+  margin: 0 auto;
+  border-bottom: 2px solid #adff2f;
+  display: none;
 }
 
 /* -------------------------------------------------------------------------- */

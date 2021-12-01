@@ -92,8 +92,11 @@
 .font-black {
   color: black;
 }
-.font-gray {
+.font-gray23272a {
   color: #23272a;
+}
+.font-gray76797d {
+  color: #76797d;
 }
 .font-lilla {
   color: #8ea1e1;
@@ -131,6 +134,9 @@
 
 .pad-100 {
   padding: 0 100px;
+}
+.pad-leftright5 {
+  padding: 0 5px;
 }
 .pad-topbot200 {
   padding: 200px 0;
@@ -241,8 +247,11 @@
   display: inline-block;
   padding: 10px 30px;
 } */
-.padbutton {
+.padbutton-10-30 {
   padding: 10px 30px;
+}
+.padbutton-5-10 {
+  padding: 5px 10px;
 }
 .bord-rad-20 {
   border-radius: 20px;
