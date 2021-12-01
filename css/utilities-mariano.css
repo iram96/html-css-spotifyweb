@@ -34,6 +34,15 @@
 .col-right {
   float: right;
 }
+
+.d-flexcol {
+  display: flex;
+  flex-direction: column;
+}
+.d-flexrow {
+  display: flex;
+  flex-direction: row;
+}
 .display-ib {
   display: inline-block;
 }
@@ -159,6 +168,9 @@
 }
 .h-600 {
   height: 600px;
+}
+.h-100per {
+  height: 100%;
 }
 .h-100vh {
   height: 100vh;
