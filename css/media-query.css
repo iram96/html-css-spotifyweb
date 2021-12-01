@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
   .sidebar {
     width: 200px;
   }
@@ -42,6 +42,19 @@
   section.side-nav figure + ul.d-flexcol li:hover {
     border-left: 3px solid #adff2f;
   }
+  .title {
+    width: 60%;
+  }
 
-  /* FINE QUERY 768 */
+  /* FINE QUERY 576 */
+}
+
+@media screen and (min-width: 768px) {
+  /* .cover {
+    vertical-align: middle;
+  } */
+  #player-cmd {
+    width: 70%;
+    margin: 0 auto;
+  }
 }

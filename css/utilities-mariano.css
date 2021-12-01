@@ -107,6 +107,9 @@
 .font-w700 {
   font-weight: 700;
 }
+.font-12 {
+  font-size: 12px;
+}
 .font-14 {
   font-size: 14px;
 }
@@ -232,6 +235,9 @@
   display: inline-block;
   padding: 10px 30px;
 } */
+.padbutton {
+  padding: 10px 30px;
+}
 .bord-rad-20 {
   border-radius: 20px;
 }

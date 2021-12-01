@@ -130,7 +130,7 @@ section.user-nav {
   background-size: contain;
 }
 
-/* PLAYER */
+/* Footer */
 
 footer {
   flex-basis: 100px;
@@ -142,52 +142,52 @@ footer {
   color: #76797d;
 }
 
-#brano,
-#footer-options {
+/* Brano */
+#brano {
+  justify-content: space-between;
+  align-content: center;
+}
+.footer-side {
   height: 100%;
   flex-basis: calc(25% - 20px);
   flex-shrink: 0;
   margin: 0 10px;
 }
 footer .card {
-  width: 100%;
+  flex-basis: 80%;
+  flex-shrink: 0;
   height: 100%;
 }
 
 .cover {
-  padding: 10px 10px 10px 0;
-  width: 50px;
-  height: 50px;
+  width: 50%;
   flex-shrink: 0;
 }
 
 .title {
-  /* display: inline-flex;
-  flex-direction: column;
-  justify-content: center; */
-  width: 40%;
+  width: 50%;
 
   height: 100px;
   flex-shrink: 0;
 }
 
-.title span,
-.title h4 {
+footer .brano-options {
   align-self: center;
+  flex-basis: 20%;
+  flex-shrink: 0;
+  margin: 0 10px;
 }
 
+/* Player */
+
 #player {
-  height: 100%;
-  flex-basis: calc(50% - 20px);
+  height: 100px;
+  flex-basis: calc(40% - 20px);
   margin: 0 10px;
   flex-shrink: 0;
 }
 
-#player-time {
-  width: 100%;
-  height: 50%;
-}
-
+/* Player cmd */
 #player-cmd {
   width: 100%;
   height: 50%;
@@ -195,6 +195,32 @@ footer .card {
   align-items: center;
 }
 
+/* Player time */
+#player-time {
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  line-height: 100;
+}
+.progress-bar {
+  width: calc(100% - (20% - 20px));
+  margin: 0 auto;
+  vertical-align: middle;
+  height: 5px;
+  background-color: #76797d;
+  align-self: center;
+  border-radius: 5px;
+}
+.progress-bar .completed {
+  background-color: white;
+  margin: 0;
+}
+.minuti {
+  width: 50px;
+  margin: 0 10px;
+}
+
+/* Footer options */
 #footer-options i {
-  margin: 0 5px;
+  margin: 0 1px;
 }
