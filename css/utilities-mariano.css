@@ -46,6 +46,12 @@
 .display-ib {
   display: inline-block;
 }
+.display-i {
+  display: inline;
+}
+.display-n {
+  display: none;
+}
 .display-b {
   display: block;
 }
@@ -66,6 +72,9 @@
 }
 .bgc-white {
   background-color: white;
+}
+.bgc-black {
+  background-color: black;
 }
 
 .no-txtdec {
@@ -136,11 +145,17 @@
 .marg-autolr {
   margin: 0 auto;
 }
+.marg-top10 {
+  margin-top: 10px;
+}
 .marg-top30 {
   margin-top: 30px;
 }
 .marg-top100 {
   margin-top: 100px;
+}
+.marg-bot10 {
+  margin-bottom: 10px;
 }
 .marg-bot30 {
   margin-bottom: 30px;
@@ -148,26 +163,35 @@
 .marg-bot100 {
   margin-bottom: 100px;
 }
-.w-25 {
+.marg-left10 {
+  margin-left: 10px;
+}
+.w-25per {
   width: 25%;
 }
-.w-33 {
+.w-33per {
   width: calc(100% / 3);
 }
-.w-40 {
+.w-40per {
   width: 40%;
 }
-.w-50 {
+.w-50per {
   width: 50%;
 }
-.w-60 {
+.w-60per {
   width: 60%;
 }
 .w-100per {
   width: 100%;
 }
+.w-40 {
+  width: 40px;
+}
 .h-30 {
   height: 30px;
+}
+.h-40 {
+  height: 40px;
 }
 .h-50 {
   height: 50px;
@@ -180,6 +204,9 @@
 }
 .h-100vh {
   height: 100vh;
+}
+.maxh-300 {
+  max-height: 300px;
 }
 
 .lh-30 {
@@ -198,4 +225,8 @@
 }
 li {
   list-style-type: none;
+}
+
+.overf-y-auto {
+  overflow-y: auto;
 }

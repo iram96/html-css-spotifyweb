@@ -6,8 +6,31 @@
     background-image: url("../img/logo.svg");
     margin: 20px 0;
   }
-  .side-nav-button + span {
+  .side-nav-button + span,
+  #user-profile + span {
     display: inline;
+  }
+  #user-profile {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #install-app + hr {
+    display: block;
+    margin: 10px 0;
+    border: 1px solid white;
+  }
+  i.fa-arrow-alt-circle-down {
+    width: 100%;
+  }
+
+  i.fa-arrow-alt-circle-down span {
+    display: inline;
+  }
+
+  .playlist {
+    display: block;
+    height: 200px;
+    /* overflow-y: auto; */
   }
 
   /* FINE QUERY 768 */
