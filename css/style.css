@@ -89,8 +89,7 @@
 }
 
 .side-nav-button {
-  height: 100%;
-  width: 100%;
+  display: inline-block;
   vertical-align: middle;
   text-decoration: none;
 }
@@ -109,7 +108,8 @@ section.side-nav figure + ul.d-flexcol li {
   padding: 5px;
 }
 
-.side-nav-button + span {
+.side-nav-button + span,
+#user-profile + span {
   display: none;
 }
 
