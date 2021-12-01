@@ -18,9 +18,10 @@
 
 .main {
   flex-grow: 1;
-  background-color: red;
+  background-color: #141922;
   height: calc(100vh - 100px);
   overflow-y: scroll;
+  color: #76797d;
 }
 
 .player {
@@ -61,25 +62,78 @@
   justify-content: space-between;
 }
 
+.side-container {
+  width: 80%;
+  margin: auto;
+}
+
+/* SIDEBAR TOP DIV */
+
+.sidebar .side-nav figure {
+  background-image: url("../img/logo-small.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+}
+
 .side-nav {
   width: 100%;
 }
 
 .side-nav img {
-  width: calc(100% - 20px);
+  width: 100%;
   height: auto;
-  margin: 5px 10px;
+  /* margin: 5px 10px; */
 }
 
 .side-nav-button {
   height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  text-decoration: none;
 }
 
 .side-nav-button > img {
+  width: 30px;
+  height: 30px;
   filter: invert(0.1);
 }
 
-section.side-nav img[src*="logo-small"] + ul.d-flexcol {
-  justify-content: center;
+section.side-nav figure + ul.d-flexcol {
   height: 150px;
+}
+
+section.side-nav figure + ul.d-flexcol li {
+  padding: 5px;
+}
+
+.side-nav-button + span {
+  display: none;
+}
+
+/* SIDEBAR BOTTOM DIV */
+
+section.user-nav {
+  height: 100px;
+}
+
+#install-app {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+#user-profile {
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  background-image: url("../img/profile.svg");
+  background-position: center;
+  background-size: contain;
 }

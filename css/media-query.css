@@ -2,10 +2,13 @@
   .sidebar {
     width: 200px;
   }
-  /* .sidebar:nth-child(1n){
-
-
-  } */
+  .sidebar .side-nav figure {
+    background-image: url("../img/logo.svg");
+    margin: 20px 0;
+  }
+  .side-nav-button + span {
+    display: inline;
+  }
 
   /* FINE QUERY 768 */
 }
