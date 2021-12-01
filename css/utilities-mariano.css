@@ -157,6 +157,9 @@
 .margneg-top10 {
   margin-top: -10px;
 }
+.margneg-left10 {
+  margin-left: -10px;
+}
 .marg-autolr {
   margin: 0 auto;
 }
