@@ -189,8 +189,9 @@ footer .brano-options {
 
 /* Player cmd */
 #player-cmd {
-  width: 100%;
+  width: 200px;
   height: 50%;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
