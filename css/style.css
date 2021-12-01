@@ -145,8 +145,9 @@ footer {
 #brano,
 #footer-options {
   height: 100%;
-  flex-basis: 25%;
+  flex-basis: calc(25% - 20px);
   flex-shrink: 0;
+  margin: 0 10px;
 }
 footer .card {
   width: 100%;
@@ -177,12 +178,23 @@ footer .card {
 
 #player {
   height: 100%;
-  flex-basis: 50%;
+  flex-basis: calc(50% - 20px);
+  margin: 0 10px;
   flex-shrink: 0;
 }
 
-#player-cmd,
 #player-time {
   width: 100%;
   height: 50%;
+}
+
+#player-cmd {
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-options i {
+  margin: 0 5px;
 }
