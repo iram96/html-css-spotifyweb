@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 .clearfix:after {
@@ -25,7 +26,6 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.568);
   height: 100px;
-  z-index: static;
 }
 
 .main {
@@ -36,15 +36,16 @@
 }
 
 .player {
-  height: 100px;
+  flex-basis: 100px;
+  flex-shrink: 0;
   background-color: dodgerblue;
   width: 100%;
 }
 
 .sidebar {
   height: calc(100vh - 100px);
-  background-color: darkgreen;
-  overflow-y: scroll;
+  background-color: black;
+  overflow-y: auto;
   z-index: 1;
 }
 
@@ -55,3 +56,8 @@
 }
 
 /* HEADER */
+
+.header > a:hover {
+  top: 25px;
+  box-shadow: -3px 5px 5px white;
+}
