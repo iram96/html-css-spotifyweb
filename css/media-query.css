@@ -6,7 +6,7 @@
     background-image: url("../img/logo.svg");
     margin: 20px 0;
   }
-  .side-nav-button + span,
+  .button + span,
   #user-profile + span {
     display: inline;
   }
@@ -16,7 +16,8 @@
   }
   #install-app + hr {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 0;
     border: 1px solid white;
   }
   i.fa-arrow-alt-circle-down {
@@ -31,6 +32,15 @@
     display: block;
     height: 200px;
     /* overflow-y: auto; */
+  }
+
+  section.side-nav figure + ul.d-flexcol li {
+    width: 200px;
+    margin-left: -20px;
+    padding: 0 20px;
+  }
+  section.side-nav figure + ul.d-flexcol li:hover {
+    border-left: 3px solid #adff2f;
   }
 
   /* FINE QUERY 768 */
