@@ -148,13 +148,15 @@ nav li:hover {
   cursor: pointer;
 }
 .borderlime {
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
   width: 40%;
-  margin: 0 auto;
   border-bottom: 2px solid #adff2f;
   display: none;
 }
 nav li:hover .borderlime {
-  display: block;
+  display: inline-block;
 }
 
 /* Main SECTIONS */
@@ -167,15 +169,20 @@ nav li:hover .borderlime {
   text-align: center;
 }
 
-.hover-play i:hover .song-cover {
+.hover-play i:hover + img {
   filter: grayscale(1);
 }
-.song-card img:hover {
+.song-card figure:hover img {
   filter: grayscale(1);
 }
 
+.song-card figure:hover {
+  top: -5px;
+  transform: scale(1.1);
+}
+
 .song-card figure:hover .hover-play {
-  display: inline-block;
+  display: inline;
   z-index: 1;
 }
 /* .song-card {
