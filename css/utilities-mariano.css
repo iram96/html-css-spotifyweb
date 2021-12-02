@@ -113,8 +113,11 @@
 .font-lilla {
   color: #8ea1e1;
 }
-.bgc-darkgray {
+.bgc-gray23272a {
   background-color: #23272a;
+}
+.bgc-gray76797d {
+  background-color: #76797d;
 }
 .font-w600 {
   font-weight: 600;

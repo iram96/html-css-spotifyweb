@@ -44,6 +44,7 @@
   }
   section.side-nav figure + ul.d-flexcol li:hover {
     border-left: 3px solid #adff2f;
+    cursor: pointer;
   }
   .title {
     width: 60%;
@@ -59,10 +60,35 @@
   .main section li {
     flex-basis: 25%;
   }
+  .brano-options i {
+    float: left;
+    width: calc(50% - 10px);
+    margin: 0 5px;
+  }
+  footer .brano-options {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 -5px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .main section li {
     flex-basis: calc(100% / 6);
+  }
+  #footer-options i {
+    margin: 0 10px;
+  }
+  .brano-options i {
+    float: left;
+    width: calc(50% - 10px);
+    margin: 0 5px;
+  }
+  footer .brano-options {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0 -5px;
   }
 }

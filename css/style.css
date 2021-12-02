@@ -99,10 +99,25 @@ section.side-nav figure + ul.d-flexcol li {
   display: none;
 }
 
+.playlist span:hover,
+.playlist li:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.playlist a:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
 /* SIDEBAR BOTTOM DIV */
 
 section.user-nav {
   height: 100px;
+}
+#install-app i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 #install-app {
@@ -146,7 +161,9 @@ nav li {
 nav li:hover {
   transform: scale(1.1);
   cursor: pointer;
+  color: white;
 }
+
 .borderlime {
   bottom: -5px;
   left: 50%;
@@ -223,15 +240,24 @@ footer .card {
 }
 
 .cover {
-  width: 50%;
+  align-self: center;
+  flex-basis: 40%;
   flex-shrink: 0;
 }
 
 .title {
-  width: 50%;
-
-  height: 100px;
+  align-self: center;
+  flex-basis: 60%;
   flex-shrink: 0;
+}
+
+.title span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+.title h4:hover {
+  cursor: pointer;
 }
 
 footer .brano-options {
@@ -239,6 +265,9 @@ footer .brano-options {
   flex-basis: 20%;
   flex-shrink: 0;
   margin: 0 10px;
+}
+footer .brano-options i:hover {
+  color: white;
 }
 
 /* Player */
@@ -257,6 +286,10 @@ footer .brano-options {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+}
+
+#player-cmd a:hover {
+  transform: scale(1.2);
 }
 
 /* Player time */
@@ -278,6 +311,21 @@ footer .brano-options {
 .progress-bar .completed {
   background-color: white;
   margin: 0;
+}
+.progress-bar:hover .completed {
+  background-color: #adff2f;
+}
+.progress-bar:hover .pallina {
+  display: inline-block;
+}
+.pallina {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: -5px;
+  top: -2px;
+
+  background-color: white;
 }
 .minuti {
   width: 50px;
