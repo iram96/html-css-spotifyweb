@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
 }
+img {
+  max-width: 100%;
+}
 
 .clearfix:after {
   display: table;
@@ -80,8 +83,6 @@
 }
 
 .button > img {
-  width: 30px;
-  height: 30px;
   filter: invert(0.1);
 }
 
@@ -135,9 +136,8 @@ section.user-nav {
 }
 nav {
   text-align: center;
-  flex-basis: 100%;
+  flex-basis: 100px;
   flex-shrink: 0;
-  height: 100px;
 }
 nav li {
   transition: 0.2s;
@@ -147,16 +147,42 @@ nav li:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-nav li:hover .borderlime {
-  display: block;
-}
-
 .borderlime {
   width: 40%;
   margin: 0 auto;
   border-bottom: 2px solid #adff2f;
   display: none;
 }
+nav li:hover .borderlime {
+  display: block;
+}
+
+/* Main SECTIONS */
+
+.main section li {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  padding: 0 10px;
+
+  text-align: center;
+}
+
+.hover-play i:hover .song-cover {
+  filter: grayscale(1);
+}
+.song-card img:hover {
+  filter: grayscale(1);
+}
+
+.song-card figure:hover .hover-play {
+  display: inline-block;
+  z-index: 1;
+}
+/* .song-card {
+  width: 90%;
+  height: 70%;
+  margin: 0 auto;
+} */
 
 /* -------------------------------------------------------------------------- */
 

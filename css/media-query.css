@@ -2,6 +2,9 @@
   .sidebar {
     width: 200px;
   }
+  .side-nav a {
+    width: 30%;
+  }
   .sidebar .side-nav figure {
     background-image: url("../img/logo.svg");
     margin: 20px 0;
@@ -53,4 +56,13 @@
   /* .cover {
     vertical-align: middle;
   } */
+  .main section li {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main section li {
+    flex-basis: calc(100% / 6);
+  }
 }
