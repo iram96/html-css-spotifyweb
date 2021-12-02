@@ -37,8 +37,6 @@
   .playlist {
     display: block;
     height: 200px;
-
-    /* overflow-y: auto; */
   }
 
   section.side-nav figure + ul.d-flexcol li {
@@ -54,7 +52,7 @@
     width: 60%;
   }
 
-  /* FINE QUERY 576 */
+  /* FINE QUERY w576 */
 }
 
 @media screen and (min-width: 768px) {
@@ -75,6 +73,7 @@
     clear: both;
     margin: 0 -5px;
   }
+  /* FINE QUERY w768 */
 }
 
 @media screen and (min-width: 992px) {
@@ -94,5 +93,25 @@
     display: table;
     clear: both;
     margin: 0 -5px;
+  }
+  /* FINE QUERY w992 */
+}
+
+/* Playlist ul */
+
+@media screen and (max-height: 841px) {
+  .new-playlist + ul {
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-height: 770px) {
+  .new-playlist + ul {
+    max-height: 150px;
+  }
+}
+@media screen and (max-height: 730px) {
+  .new-playlist + ul {
+    max-height: 90px;
   }
 }

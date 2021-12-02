@@ -14,24 +14,15 @@ img {
   clear: both;
 }
 
-/* body {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
-
-/* .pippo {
-  display: flex;
-  flex-direction: row;
-  /* width: 100%;
- } */
-
 /* HEADER */
 
 .header {
+  margin-top: -100px;
   position: fixed;
-  width: 100%;
+  width: calc(100% - 50px);
   background-color: rgba(0, 0, 0, 0.568);
   height: 100px;
+  z-index: 1;
 }
 .header > a:hover {
   top: 25px;
@@ -43,7 +34,7 @@ img {
 .sidebar {
   height: calc(100vh - 100px);
   background-color: black;
-  z-index: 1;
+  z-index: 2;
   flex-shrink: 0;
   width: 50px;
   justify-content: space-between;
@@ -52,6 +43,7 @@ img {
 .side-container {
   width: 80%;
   margin: auto;
+  height: 100%;
 }
 
 /* SIDEBAR TOP DIV */
@@ -72,7 +64,6 @@ img {
 .side-nav img {
   width: 100%;
   height: auto;
-  /* margin: 5px 10px; */
 }
 
 .button {
@@ -99,13 +90,17 @@ section.side-nav figure + ul.d-flexcol li {
   display: none;
 }
 
-.playlist span:hover,
 .playlist li:hover {
   color: white;
   cursor: pointer;
 }
 
-.playlist a:hover {
+.playlist .new-playlist:hover span {
+  color: white;
+  cursor: pointer;
+}
+
+.playlist .new-playlist:hover a {
   background-color: white;
   cursor: pointer;
 }
@@ -194,6 +189,7 @@ nav li:hover .borderlime {
 }
 
 .song-card figure:hover {
+  cursor: pointer;
   top: -5px;
   transform: scale(1.1);
 }
@@ -202,23 +198,15 @@ nav li:hover .borderlime {
   display: inline;
   z-index: 1;
 }
-/* .song-card {
-  width: 90%;
-  height: 70%;
-  margin: 0 auto;
-} */
 
 /* -------------------------------------------------------------------------- */
 
 /* Footer */
 
 footer {
-  /* flex-basis: 100px;
-  flex-shrink: 0; */
+  z-index: 3;
   background-color: #282828;
-  /* width: 100%; */
   justify-content: space-between;
-  /* align-items: center; */
   color: #76797d;
 }
 
@@ -228,12 +216,12 @@ footer {
   align-content: center;
 }
 .footer-side {
-  height: 100%;
   flex-basis: calc(25% - 20px);
   flex-shrink: 0;
   margin: 0 10px;
 }
 footer .card {
+  align-self: center;
   flex-basis: 80%;
   flex-shrink: 0;
   height: 100%;
@@ -286,6 +274,7 @@ footer .brano-options i:hover {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
 }
 
 #player-cmd a:hover {
@@ -297,10 +286,9 @@ footer .brano-options i:hover {
   width: 100%;
   height: 50%;
   justify-content: space-between;
-  line-height: 100;
 }
 .progress-bar {
-  width: calc(100% - (20% - 20px));
+  width: calc(100% - (2 * (25% - 20px)));
   margin: 0 auto;
   vertical-align: middle;
   height: 5px;
@@ -324,12 +312,13 @@ footer .brano-options i:hover {
   border-radius: 50%;
   right: -5px;
   top: -2px;
-
   background-color: white;
 }
 .minuti {
-  width: 50px;
+  flex-basis: calc(25% - 20px);
   margin: 0 10px;
+  text-align: center;
+  align-self: center;
 }
 
 /* Footer options */

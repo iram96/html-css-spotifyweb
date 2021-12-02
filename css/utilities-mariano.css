@@ -8,6 +8,15 @@
 .transition-1s {
   transition: 1s;
 }
+.transition-01s {
+  transition: 0.1s;
+}
+.black-fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.301);
+}
 
 .pos-abs {
   position: absolute;
@@ -250,8 +259,14 @@
 .h-100vh {
   height: 100vh;
 }
+.maxh-100vh {
+  max-height: 100vh;
+}
 .maxh-300 {
   max-height: 300px;
+}
+.maxh-240 {
+  max-height: 240px;
 }
 
 .lh-30 {
@@ -276,6 +291,9 @@
 }
 .bord-rad-40 {
   border-radius: 40px;
+}
+.bord-rad-50per {
+  border-radius: 50%;
 }
 li {
   list-style-type: none;
